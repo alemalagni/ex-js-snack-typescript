@@ -1,3 +1,4 @@
+// Snack 1
 function Dato(dato: string | number | boolean) {
   let response = '';
 
@@ -14,4 +15,11 @@ function Dato(dato: string | number | boolean) {
   console.log(response);
 }
 
-Dato('ciao');
+// Snack 2
+type Dipendente = {
+  nome: string;
+  cognome: string;
+  annoNascita: number;
+  sesso: 'M' | 'F';
+  anniDiServizio: [number, ...number[]];
+};
