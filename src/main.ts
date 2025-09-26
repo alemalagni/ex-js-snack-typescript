@@ -23,3 +23,17 @@ type Dipendente = {
   sesso: 'M' | 'F';
   anniDiServizio: [number, ...number[]];
 };
+
+// Snack 3
+type DipendenteEXT = Dipendente & {
+  Developer: {
+    livelloEsperienza: 'Junior' | 'Mid' | 'Senior';
+    linguaggi?: string[];
+    certificazioni?: string[];
+  };
+  ProjectManager: {
+    teamSize: number | null;
+    budgetGestito?: number;
+    stakeholderPrincipali?: string[];
+  }
+}
