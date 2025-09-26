@@ -21,7 +21,7 @@ type Dipendente = {
   cognome: string;
   annoNascita: number;
   sesso: 'M' | 'F';
-  anniDiServizio: [number, ...number[]];
+  anniDiServizio: number[];
 };
 
 // Snack 3
