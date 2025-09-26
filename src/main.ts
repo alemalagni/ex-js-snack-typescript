@@ -1,5 +1,15 @@
 function Dato(dato: string | number | boolean) {
-  console.log(typeof dato === 'string' ? dato.toUpperCase() : '');
-  console.log(typeof dato === 'number' ? dato * 2 : '')
-  console.log(typeof dato === 'boolean' ? (dato ? 'Sì' : 'No') : '');
+  let response = '';
+
+  if (typeof dato === 'string') {
+    response = dato.toUpperCase();
+  } else if (typeof dato === 'number') {
+    response = (dato * 2).toString();
+  } else if (typeof dato === 'boolean') {
+    response = dato ? 'Sì' : 'No';
+  } else {
+    response = 'Tipo non supportato';
+  }
+
+  console.log(response);
 }
