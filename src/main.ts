@@ -13,3 +13,5 @@ function Dato(dato: string | number | boolean) {
 
   console.log(response);
 }
+
+Dato('ciao');
